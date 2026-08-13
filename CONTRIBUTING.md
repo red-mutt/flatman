@@ -47,19 +47,80 @@ This allows other contributors to see the current state of the work before start
 something themselves.
 
 
-
-
-
-
-
 ## workflow
-
-1. Create a branch for your change.
-2. Make your changes.
-3. Test the project.
-4. Commit your changes.
-5. Push your branch.
+1. Create branch for your change.
+2. Make your changes
+3. Test
+4. Commit changes.
+5. Push branch
 6. Open a pull request.
 
+## Branches
+Use a branch name that gives a good idea of what you're working on.
+
+Examples:
+feature/application-search
+feature/application-details
+fix/search-crash
+fix/terminal-cleanup
+docs/contributing
+
+Avoid using main directly for feature dev
+
 ## Commits
+
+Commits should describe a single logical change (whether it be big or small).
+
+Examples:
+Add flatpak search
+Add application details view
+Fix terminal cleanup on exit
+Update contribution guidelines
+
+Avoid combining unrelated changes into a single commit (albeit it's not the end of the world if you do, just make sure to make it clear in the commit message what you're changing).
+
+## Testing
+Before opening a PR, make sure the project builds okay and test functionality affected by your changes
+
+At minimum: 
+
+```
+make
+./flatman
+```
+
+New functionality should be tested manually where appropriate. Please avoid introducing compiler warnings.
+
+## PRs
+
+PRs should:
+- Clearly describe what has changed.
+- Explain how changes were tested.
+- Reference the relevant issue when applicable
+- Contain only changes relevant to the proposed change.
+- Be ready for review before requesting a merge
+
+If these rules seem gruelling, just keep PRs reasonably focused. Large changes should generally be discussed before implementation.
+
+## Code Quality
+Contributors should aim to keep code:
+- Readable
+- Maintainable
+- Consistent with the existing project
+- Properly separated into appropriate comments
+- Free of unnecessary complexity.
+
+If a change introduces a significant architectural decision, discuss it with other contributors before implementation where practical.
+
+## Updating TODO.md
+```TODO.md``` represents planned and outstanding work.
+
+Contributors should update it when completing a planned task or when the project's plans
+change significantly.
+
+Do not add every small idea or potential improvement to ```TODO.md```. Issues are better suited for ideas, bugs, and work that has not yet been accepted as planned development.
+
+## Questions and Discussion
+If you are unsure whether a change should be discussed before implementation, open an issue or discussion rather than duplicating existing work or making a potentially disruptive change without coordination.
+
 
