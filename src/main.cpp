@@ -1,20 +1,22 @@
 #include <ncurses.h>
+#include "include/flatpak_service.hpp"
 
 int main() {
-    initscr();
-    cbreak();
-    noecho();
-    keypad(stdscr, TRUE);
+  initscr();
+  cbreak();
+  noecho();
+  keypad(stdscr, TRUE);
 
-    printw("flatman\n");
+  printw("flatman\n");
 
-    refresh();
+  move(5,5);
+  
+  refresh();
 
-    while (getch() != 'q')
-    {
-    }
+  while (getch() != 'q') {
+  }
 
-    endwin();
-    
-    return 0;
+  endwin();
+
+  return 0;
 }

@@ -25,7 +25,7 @@
 - [ ] Install applications
 - [ ] Remove applications
 - [ ] Update applications
-- [ ] Manage installed applications
+- [x] Manage installed applications
 - [ ] Manage remotes
 - [ ] Manage runtimes
 - [ ] Manage permissions
