@@ -1,4 +1,5 @@
 #include <ncurses.h>
+#include "include/flatpak_service.hpp"
 
 int main() {
   initscr();
@@ -8,6 +9,8 @@ int main() {
 
   printw("flatman\n");
 
+  move(5,5);
+  
   refresh();
 
   while (getch() != 'q') {
