@@ -1,20 +1,19 @@
 #include <ncurses.h>
 
 int main() {
-    initscr();
-    cbreak();
-    noecho();
-    keypad(stdscr, TRUE);
+  initscr();
+  cbreak();
+  noecho();
+  keypad(stdscr, TRUE);
 
-    printw("flatman\n");
+  printw("flatman\n");
 
-    refresh();
+  refresh();
 
-    while (getch() != 'q')
-    {
-    }
+  while (getch() != 'q') {
+  }
 
-    endwin();
-    
-    return 0;
+  endwin();
+
+  return 0;
 }

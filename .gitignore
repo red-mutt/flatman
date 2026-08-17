@@ -1,0 +1,8 @@
+*.d
+*.o
+flatman
+
+compile_commands.json
+.clangd/
+.vscode/
+.idea/
