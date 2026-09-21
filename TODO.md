@@ -4,7 +4,7 @@
 
 ## TUI
 - [x] ncurses setup and application loop
-- [ ] Main menu
+- [x] Main menu
 - [ ] Screen and navigation system
 - [ ] Keyboard navigation
 
